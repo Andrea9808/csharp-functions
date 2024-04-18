@@ -136,6 +136,61 @@ namespace csharp_functions
 
                 int risultato = sommaElementiArray(arrayAlQuadrato);
                 Console.WriteLine($"Risultato della somma dell'array modificata al quadrato: {risultato}");
+
+                //SPAZIO
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("BONUS");
+
+
+                /////////////////
+                    //BONUS
+                ////////////////
+               
+
+                Console.WriteLine("Quanti numeri vuoi inserire?");
+                int lunghezzaArray = Convert.ToInt32(Console.ReadLine());
+
+                //SPAZIO
+                Console.WriteLine();
+
+                int[] arrNum = new int[lunghezzaArray];
+
+                Console.WriteLine("Inserisci i numeri:");
+
+                for (int i = 0; i < lunghezzaArray; i++)
+                {
+                    Console.Write($"Numero {i + 1}: ");
+                    arrNum[i] = Convert.ToInt32(Console.ReadLine());
+                }
+
+                //SPAZIO
+                Console.WriteLine();
+                Console.WriteLine();
+
+                //stampa array
+                Console.WriteLine("Ecco il tuo array del Bonus: ");
+                StampaArray(arrNum);
+
+                //SPAZIO
+                Console.WriteLine();
+                Console.WriteLine();
+
+                //stampa array al quadrato
+                int[] risultatoArrNum = ElevaArrayAlQuadrato(arrNum);
+                Console.WriteLine("Array al quadrato del Bonus: ");
+                StampaArray(risultatoArrNum);
+
+                //SPAZIO
+                Console.WriteLine();
+                Console.WriteLine();
+
+                int sommaOriginaleArrNum = sommaElementiArray(arrNum);
+                Console.WriteLine($"Somma di tutti i numeri nell'array originale del Bonus: {sommaOriginaleArrNum}");
+
+                int sommaArrNumQuadrato = sommaElementiArray(risultatoArrNum); 
+                Console.WriteLine($"Risultato della somma dell'array modificata al quadrato: {sommaArrNumQuadrato}");
+
             }
 
         }
