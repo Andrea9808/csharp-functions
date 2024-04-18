@@ -115,7 +115,6 @@ namespace csharp_functions
 
                 int[] arraySomma = { 2, 6, 7, 5, 3, 9 };
 
-                //richiamo variabile 
                 int[] arrayAlQuadrato = ElevaArrayAlQuadrato(arraySomma);
 
                 int sommaElementiArray(int[] arrayAlQuadrato)
@@ -185,9 +184,12 @@ namespace csharp_functions
                 Console.WriteLine();
                 Console.WriteLine();
 
+
+                //somma originale
                 int sommaOriginaleArrNum = sommaElementiArray(arrNum);
                 Console.WriteLine($"Somma di tutti i numeri nell'array originale del Bonus: {sommaOriginaleArrNum}");
 
+                //somma al quadrato
                 int sommaArrNumQuadrato = sommaElementiArray(risultatoArrNum); 
                 Console.WriteLine($"Risultato della somma dell'array modificata al quadrato: {sommaArrNumQuadrato}");
 
